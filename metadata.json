@@ -1,0 +1,6 @@
+{
+  "name": "Maya - Pixar 3D Character Studio",
+  "description": "Interactive 3D character portrait showcase featuring cinematic lighting rigs, expression switching, color palette inspector, and studio export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
