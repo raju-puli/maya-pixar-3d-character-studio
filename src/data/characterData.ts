@@ -1,4 +1,15 @@
-import { Expression, BackdropOption, ColorSwatch, LightingRig } from '../types';
+
+import {
+  Expression,
+  BackdropOption,
+  ColorSwatch,
+  LightingRig,
+} from '../types';
+
+import mainPortrait from '../assets/images/character_portrait_main_1794380735421.jpg';
+import curiousPortrait from '../assets/images/character_portrait_curious_1794380736127.jpg';
+import laughingPortrait from '../assets/images/character_portrait_laughing_1794380737501.jpg';
+import thinkingPortrait from '../assets/images/character_portrait_thinking_1794380737129.jpg';
 
 export const CHARACTER_NAME = "Maya Lin-Walker";
 export const CHARACTER_TITLE = "Pixar-Style 3D Character Portrait";
@@ -9,7 +20,7 @@ export const EXPRESSIONS: Expression[] = [
     name: 'Warm Smile',
     mood: 'Friendly & Welcoming',
     description: 'Signature gentle grin with bright sparkling hazel-brown eyes, displaying warmth and childlike enthusiasm.',
-    imageUrl: '/src/assets/images/character_portrait_main_1794380735421.jpg',
+    imageUrl: mainPortrait,
     eyeFocus: 'Direct to Camera',
     smileType: 'Gentle Open Smile',
     tags: ['Hero Shot', 'Signature', 'Warm'],
@@ -19,7 +30,7 @@ export const EXPRESSIONS: Expression[] = [
     name: 'Curious Spark',
     mood: 'Inquisitive & Witty',
     description: 'Playful three-quarter head tilt with an energetic smirk and golden hoop accessories.',
-    imageUrl: '/src/assets/images/character_portrait_curious_1794380736127.jpg',
+    imageUrl: curiousPortrait,
     eyeFocus: 'Slightly Off-Axis',
     smileType: 'Knowing Grin',
     tags: ['Three-Quarter', 'Dynamic', 'Bright'],
@@ -29,7 +40,7 @@ export const EXPRESSIONS: Expression[] = [
     name: 'Pure Joy',
     mood: 'Ecstatic & Joyful',
     description: 'Enthusiastic open-mouthed laughter, radiant cheeks with natural freckles and joyful eye crinkles.',
-    imageUrl: '/src/assets/images/character_portrait_laughing_1794380737501.jpg',
+    imageUrl: laughingPortrait,
     eyeFocus: 'Direct to Lens',
     smileType: 'Hearty Laugh',
     tags: ['High Energy', 'Heartwarming', 'Spontaneous'],
@@ -39,7 +50,7 @@ export const EXPRESSIONS: Expression[] = [
     name: 'Adventurous Smirk',
     mood: 'Clever & Contemplative',
     description: 'Thoughtful gaze looking upwards with a sly explorer smirk, inspired by curiosity and discovery.',
-    imageUrl: '/src/assets/images/character_portrait_thinking_1794380737129.jpg',
+    imageUrl: thinkingPortrait,
     eyeFocus: 'Upwards Right',
     smileType: 'Pensive Smirk',
     tags: ['Explorer', 'Inspirational', 'Cinematic'],
@@ -80,10 +91,10 @@ export const BACKDROPS: BackdropOption[] = [
 export const DEFAULT_LIGHTING: LightingRig = {
   keyIntensity: 78,
   keyAngle: 45,
-  keyTemperature: 4500, // Balanced warm daylight
+  keyTemperature: 4500,
   fillIntensity: 42,
   rimIntensity: 65,
-  rimColor: '#FDE047', // Warm yellow rim
+  rimColor: '#FDE047',
   depthOfField: 35,
   vignette: 24,
   bloom: 18,

@@ -8,6 +8,8 @@ import { defineConfig } from 'vite';
 const rootDir = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
+  base: '/maya-pixar-3d-character-studio/',
+
   plugins: [react(), tailwindcss()],
 
   resolve: {
@@ -19,10 +21,7 @@ export default defineConfig({
   server: {
     port: 3000,
     host: '0.0.0.0',
-
-    // Preserve AI Studio HMR configuration.
     hmr: process.env.DISABLE_HMR !== 'true',
-
     watch: process.env.DISABLE_HMR === 'true' ? null : {},
   },
 });
